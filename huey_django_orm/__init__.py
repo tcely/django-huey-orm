@@ -1,9 +1,11 @@
-name = "django-huey-orm"
-__version__ = "0.0.1"
-
-
+import logging
 from huey.api import Huey
 from .storage import DjangoORMStorage
+
+logger = logging.getLogger(__name__)
+
+name = "django-huey-orm"
+__version__ = "0.0.1"
 
 
 class DjangoORMHuey(Huey):
