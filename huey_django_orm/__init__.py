@@ -1,2 +1,2 @@
-name = "huey_django_orm"
-__version__ = "24.10.24.0"
+name = "django-huey-orm"
+__version__ = "0.0.1"
