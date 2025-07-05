@@ -2,7 +2,7 @@ from setuptools import setup
 
 import huey_django_orm
 
-author = "avryhof"
+author = "tcely"
 name = huey_django_orm.name
 version = huey_django_orm.__version__
 
@@ -31,10 +31,12 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Natural Language :: English",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
     ],
     install_requires=["Django", "huey"],
+    python_version=">=3.8",
 )
