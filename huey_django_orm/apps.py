@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class HueyDjangoOrmConfig(AppConfig):
+class DjangoOrmHueyConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "huey_django_orm"
+    name = "django_huey_orm"
