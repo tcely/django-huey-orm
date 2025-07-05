@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from huey_django_orm.models import HueyKv, HueySchedule, HueyTask
+from .models import HueyKv, HueySchedule, HueyTask
 
 
 @admin.register(HueyKv)
