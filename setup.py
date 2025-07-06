@@ -1,10 +1,10 @@
 from setuptools import setup
 
-import huey_django_orm
+import django_huey_orm
 
 author = "tcely"
-name = huey_django_orm.name
-version = huey_django_orm.__version__
+name = django_huey_orm.name
+version = django_huey_orm.__version__
 
 readme = open("README.md").read()
 
@@ -24,7 +24,7 @@ setup(
     description="A module to use Django ORM for storage with huey.",
     long_description=readme,
     long_description_content_type="text/markdown",
-    keywords="huey,django,huey.contrib.djhuey",
+    keywords="huey,django,django_huey,huey.contrib.djhuey",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Framework :: Django",

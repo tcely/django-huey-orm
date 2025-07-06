@@ -32,7 +32,7 @@ Add to INSTALLED_APPS
 ```python
 INSTALLED_APPS = [
     "...",
-    "huey_django_orm",
+    "django_huey_orm",
     "...",
 ]
 ```
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 Configure Huey to use DjangoORMHuey
 
 ```python
-from huey_django_orm import DjangoORMHuey
+from django_huey_orm import DjangoORMHuey
 
 HUEY = DjangoORMHuey()
 ```
@@ -50,7 +50,7 @@ or if you need other options
 ```python
 HUEY = {
     "...": "...",
-    'huey_class': 'huey_django_orm.DjangoORMHuey',
+    'huey_class': 'django_huey_orm.DjangoORMHuey',
     "......": "...",
 }
 ```
@@ -58,7 +58,7 @@ HUEY = {
 ### Run Migrations
 
 ```bash
-python3 manage.py migrate huey_django_orm
+python3 manage.py migrate django_huey_orm
 ```
 
 That's it!  Now you can use Huey just like you normally would.
