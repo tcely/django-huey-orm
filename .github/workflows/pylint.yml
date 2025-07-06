@@ -33,7 +33,6 @@ jobs:
       run: |
           target_version='py38'
           ignore_csv_list='E701,E722,E731'
-          cd tubesync
           # output formats:
           # "full" | "concise" | "grouped" |
           # "json" | "junit" | "github" | "gitlab" |
