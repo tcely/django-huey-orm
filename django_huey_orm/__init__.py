@@ -1,16 +1,9 @@
 import logging
-from huey.api import Huey
-from .storage import DjangoORMStorage
+
+from .huey import DjangoORMHuey
+from .vars import NAME as name # noqa: F401
+from .version import VERSION as __version__ # noqa: F401
 
 logger = logging.getLogger(__name__)
-
-name = "django-huey-orm"
-__version__ = "0.0.1"
-
-prefix = "django_huey_orm"
-
-
-class DjangoORMHuey(Huey):
-    storage_class = DjangoORMStorage
 
 

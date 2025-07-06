@@ -7,11 +7,12 @@ from huey.constants import EmptyData
 from huey.storage import BaseStorage, to_bytes, to_blob
 from huey.utils import to_timestamp
 
-from . import logger, prefix, DjangoORMHuey
+from .huey import DjangoORMHuey # noqa: F401
+from .vars import DEFAULT_PREFIX
 
 
 class DjangoORMStorage(BaseStorage):
-    model_prefix = prefix
+    model_prefix = DEFAULT_PREFIX
     task_model = None
     schedule_model = None
     keystore_model = None
